@@ -1,112 +1,197 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
 }
 
-.app-bar {
-  padding: 8px 16px;
-  background-color: #8d9eff;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #424242;
 }
 
-.app-bar .app-bar__menu {
-  display: flex;
-  align-items: center;
+#navbar {
+  background-color: #8D9EFF!important;
+  box-shadow: 3px 10px 25px rgba(112, 104, 104, 0.74);
+  padding-bottom: 10px;
+  margin: auto;
 }
 
-.app-bar .app-bar__menu button {
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
+.nav-link:hover {
+  color: #424d8a!important;
+}
+
+.nav-item {
   padding: 8px;
-  cursor: pointer;
+  margin-top: -10px;
 }
 
-.app-bar .app-bar__brand .logo {
-  display: flex;
-  align-items: center;
-  width: 80px;
+.signinup-btn {
+  display: inline;
+  padding: 10px;
 }
 
-.app-bar .app-bar__brand h1 {
+.name-web {
+  margin-left: 5px;
+}
+
+.logo-name1 {
+  color: black;
+  font-size: 24px;
+}
+
+.logo-name2 {
   color: white;
-  text-transform: uppercase;
-  font-size: 22px;
-  user-select: none;
+  font-size: 24px;
 }
 
-.app-bar .app-bar__navigation {
-  position: absolute;
-  top: 50px;
-  left: -180px;
-  width: 150px;
-  transition: all 0.3s;
-  padding: 8px;
-  background-color: #8d9eff;
-  overflow: hidden;
-}
 
-.app-bar .app-bar__navigation.open {
-  left: 0;
-}
-
-.app-bar .app-bar__navigation ul li a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  padding: 8px;
-  margin-bottom: 5px;
-  width: 100%;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  min-height: 380px;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.heroimg {
-  background-image: url('../img/jumbotron.jpg');
+.jumbotron {
+  padding: 140px;
+  margin-top: 70px;
+  background-image: url('/src/public/image/jumbotron.jpg')!important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  align-items: center;
+  text-align: center;
 }
 
-.heroinner {
-  margin: 0 auto;
-  max-width: 800px;
+
+.main-content {
+  margin: auto;
+  padding-bottom: 120px;
 }
 
-.herotitle {
-  color: #fff;
-  font-weight: 600;
-  font-size: 36px;
-  text-shadow: 1px 1px #141414;
+.joblist-title {
+  margin-top: 120px;
+  margin-left: 50px;
 }
 
-.herosubtitle {
-  color: #fff;
-  margin-top: 16px;
+.nav-item {
+  margin-top: 10px;
+}
+
+.picture {
+  object-fit: cover!important;
+  margin-top: 20px;
+  
+}
+
+.login-btn {
+  background-color: #6C4AB6!important;
+  margin-right:80px;
+  border-radius: 30px!important;
+  color: white!important;
+  width: 120px;
+}
+
+.login-btn a {
+  text-decoration: none;
+  color: white!important;
+}
+
+.login-btn:hover a {
+  text-decoration: none;
+  color: #6C4AB6!important;
+}
+
+.login-btn:hover {
+  background-color: transparent!important;
+  border-color: #6C4AB6!important;
+  color: #6C4AB6!important;
+}
+
+.menu-item {
+  margin-left: 40px;
+  background-color: #8D9EFF!important;
+}
+
+.apply-btn {
+  background-color: #6C4AB6!important;
+  border-radius: 20px!important;
+  color: white!important;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.apply-btn:hover {
+  background-color: white!important;
+  border-color: #6C4AB6!important;
+  color: #6C4AB6!important;
+}
+
+.post-item {
+  justify-content: center;
+  display: flex;
+  margin: 30px auto auto !important;
+}
+
+/* card */
+.card {
+  width: 90%!important;
+  border-radius: 20px!important;
+  padding: 15px;
+  margin: 20px;
+}
+
+.card:hover {
+  width: 100%;
+  background-color: #8D9EFF;
+  color: white;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.card-body {
+  padding: 30px 30px!important;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.office-loc {
   font-size: 18px;
-  font-weight: 600;
-  text-shadow: 1px 1px #141414;
+  color: rgb(173, 115, 6);
+  font-weight: 2;
 }
 
-.footer_sosmed {
-  background-color: #8d9eff;
+.jobdesk span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #6C4AB6;
 }
 
-.footer_a {
-  background-color: #6c4ab6;
+.category {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.category span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #424d8a;
+}
+
+/* footer */
+
+.footer {
+  margin-top: 600px!important;
+  background-color: #8D9EFF!important;
+  padding: 120px;
+}
+
+.copyright {
+  background-color: #6C4AB6!important;
 }

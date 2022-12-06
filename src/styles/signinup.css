@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #8D9EFF, #3b52d8, #010f8f);
+}
+
+.main {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgb(0, 0, 0);
+}
+
+#check {
+    display: none;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: #424d8a;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+input {
+    width: 70%;
+    height: 20px;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+button {
+    width: 28%;
+    height: 40px;
+    margin: 10px auto;
+    margin-left: 44px;
+    justify-content: center;
+    display: inline;
+    color: #fff;
+    font-size: 1em;
+    background: #424d8a;
+    font-weight: normal;
+    margin-top: 20px;
+    outline: none;
+    border-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #424d8a;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.login a {
+    color: #ffffff;
+}
+
+button:hover {
+    background: #D9D9D9;
+    border-color: #424d8a;
+    color: #424d8a;
+}
+
+.login {
+    height: 460px;
+    background: #424d8a;
+    border-radius: 50% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+
+.login label {
+    margin-top: 50px;
+    color: #D9D9D9;
+    transform: scale(.6);
+}
+
+#check:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#check:checked ~ .login label {
+    transform: scale(1);
+}
+
+#check:checked ~ .signup label {
+    transform: scale(.6);
+}
+
+
+
+
+
+
+
+
+
+
+

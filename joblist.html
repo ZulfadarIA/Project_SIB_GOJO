@@ -1,86 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golek Kerjo</title>
-    <link rel="stylesheet" href="./src/styles/main.css" />
-    <link rel="stylesheet" href="./src/styles/responsive.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  </head>
-  <body>
-    <header class="app-bar">
-      <div class="app-bar__menu">
-        <button id="hamburgerButton">☰</button>
-      </div>
-      <div class="app-bar__brand">
-        <img class="logo" src="./src/img/logo.png" alt="Golek Kerjo" />
-      </div>
-      <nav id="navigationDrawer" class="app-bar__navigation">
-        <ul>
-          <li><a href="#/beranda">Beranda</a></li>
-          <li><a href="#/pekerjaan">Pekerjaan</a></li>
-          <li><a href="#/riwayat">--</a></li>
-          <li><a href="#/tentang">Tentang</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="hero heroimg">
-      <div class="heroinner">
-        <h1 class="herotitle">Golek Kerjo</h1>
-        <p class="herosubtitle">Best Website for Finding Job</p>
-      </div>
-    </div>
-
-    <!-- Main Content -->
-    <main id="content">
-      <section class="content">
-        <div class="latest">
-          <h1>Job List</h1>
-          <div class="post" id="articel"></div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="src/styles/style.css">
+  <link rel="stylesheet" href="src/styles/responsive.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>GOJO</title>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="height: 70px;">
+          <div class="container-fluid">
+            <img class="ms-4" src="src/public/image/Logo.png" style="height: 50px; width: 50px;" alt="logo">
+            <h1 class="mx-1 name-web"><span class="logo-name1">GO</span><span class="logo-name2">JO</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse menu-item" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-normal fs-5">
+                <li class="nav-item">
+                  <a class="nav-link text-white active" aria-current="page" href="#/home">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#joblist">Pekerjaan</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link text-white" href="#/history">Riwayat</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#/about">Tentang</a>
+                </li>
+              </ul>
+              <div class="signinup-btn">
+                <button class="btn login-btn" type="submit"><a href="/signinup.html"><b>Sign</b> up/in</a></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </header>
+  <main class="main-content">
+    <div class="container justify-content-center" id="joblist">
+      <h3 class="joblist-title">Job list</h3>
+      <div class="row post-item">
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h1>Golek Kerjo</h1>
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#">Pekerjaan</a></li>
-              <li><a href="#">-</a></li>
-              <li><a href="#">Tentang</a></li>
-            </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>Social Media</h4>
-            <ul>
-              <li><a href="#">instagram</a></li>
-              <li><a href="#">twitter</a></li>
-              <li><a href="#">facebook</a></li>
-              <li><a href="#">tiktok</a></li>
-            </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/src/public/image/loker.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">PT sejahtera</h3>
+              <h4 class="office-loc">Jakarta Barat</h4>
+              <h5 class="jobdesk">Jobdesk: Software Engineer</h5>
+              <h5 class="category">Category:<span> Full-time</span></h5>
+              <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
+                neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
+                similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
+              <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+              <div class="saved-job"></div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer -->
-  </body>
+    </div>
+  </main>
+  <footer class="pt-5 pb-4 border-top footer mt-5 mx-auto">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-Secondary">Company</h5>
+          <img class="mx-1" src="src/public/image/Logo.png" style="height: 120px; width: 120px;" alt="logo">
+          <p class="text-muted">@Golek Kerjo</p>
+          <div class="col mb-3"></div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Resource</h5>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Sosial Media</h5>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+          <p class="nav-item mb-2">
+            <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3">Semarang, Jawa Tengah, Indonesia</i>
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3">Semarang, Jawa Tengah, Indonesia</i>
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3">Semarang, Jawa Tengah, Indonesia</i>
+          </p>
+          <p>
+            <i class="fas fa-print mr-3">Semarang, Jawa Tengah, Indonesia</i>
+          </p>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>Copyright @2022 All rights reserved by: 
+              <a href="#" style="text-decoration: none;">
+                <strong class="text-secondary">GOJO</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
 </html>
