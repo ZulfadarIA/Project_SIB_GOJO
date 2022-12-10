@@ -18,7 +18,7 @@ const Home = {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../image/jumbotron.jpg" class="d-block w-100 hero" alt="...">
+            <img src="../image/jumbotron_2.png" class="d-block w-100 hero" alt="...">
             <div class="carousel-caption">
               <h5>Golek Kerjo</h5>
               <p>Best Website for Finding Job</p>
@@ -26,7 +26,7 @@ const Home = {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../image/jumbotron.jpg" class="d-block w-100" alt="...">
+            <img src="../image/jumnbtron_3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption">
                 <h5>Golek Kerjo</h5>
                 <p>Best Website for Finding Job</p>
@@ -83,10 +83,7 @@ const Home = {
                             <div class="card-body">
                                 <i class="bi bi-briefcase-fill"></i>
                                 <h3 class="card-title">Fulltime Job</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                    reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                    et deserunt dolorum libero. Non, omnis.</p>
+                                <p>Cari lowongan pekerjaan Penuh waktu</p>
                                 <button class="btn btn-primary text-light">Go</button>
                             </div>
                         </div>
@@ -96,10 +93,7 @@ const Home = {
                             <div class="card-body">
                                 <i class="bi bi-briefcase-fill"></i>
                                 <h3 class="card-title">Freelance</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                    reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                    et deserunt dolorum libero. Non, omnis.</p>
+                                <p>Cari lowongan pekerjaan paruh waktu</p>
                                 <button class="btn btn-primary text-light">Go</button>
                             </div>
                         </div>
@@ -109,10 +103,7 @@ const Home = {
                             <div class="card-body">
                                 <i class="bi bi-briefcase-fill"></i>
                                 <h3 class="card-title">Internship</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                    reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                    et deserunt dolorum libero. Non, omnis.</p>
+                                <p>Cari lowongan magang/internship</p>
                                 <button class="btn btn-primary text-light">Go</button>
                             </div>
                         </div>
@@ -236,6 +227,59 @@ const Home = {
         </div>
       </div>
        <!-- End of joblist -->
+       <!-- About us start -->
+      <div class="container about-us-container" id="about_us">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="section-header text-center pb-5">
+                  <h2 my-1 text-light>About Us</h2>
+              </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-5 mx-auto distance-1">
+            <div class="card shadow mx-auto" style="max-width: 23rem;">
+              <img class="rounded-circle mx-auto" src="../image/Zulfadar_profile.jpg" alt="Generic placeholder image" width="140" height="140">
+              <div class="card-body">
+                <h2>Zulfadar Indaka Alkaf</h2>
+                <p>Front End & UI Designer</p>
+                <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/zulfadar-indaka-alkaf-097b82255/" role="button">View details »</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mx-auto distance-1">
+            <div class="card shadow mx-auto" style="max-width: 23rem;">
+              <img class="rounded-circle mx-auto" src="../image/auf_profile.png" alt="Generic placeholder image" width="140" height="140">
+              <div class="card-body">
+                <h2>M. Rahadian Abdurrahman’auf All-Firdausy</h2>
+                <p>Front End</p>
+                <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/abdurrahman-auf-569872244/" role="button">View details »</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mx-auto distance-1">
+            <div class="card shadow mx-auto" style="max-width: 23rem;">
+              <img class="rounded-circle mx-auto" src="../image/galuh_profile.jpg" alt="Generic placeholder image" width="140" height="140">
+              <div class="card-body">
+                <h2>Galuh Widy Nugroho</h2>
+                <p>Front End</p>
+                <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/galuhwidynugroho/" role="button">View details »</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mx-auto distance-1">
+            <div class="card shadow mx-auto" style="max-width: 23rem;">
+              <img class="rounded-circle mx-auto" src="../image/faiz_profile.jpeg" alt="Generic placeholder image" width="140" height="140">
+              <div class="card-body">
+                <h2>Faiz Gunawan</h2>
+                <p>Front End</p>
+                <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/faiz-gunawan/" role="button">View details »</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of about us -->
+    </div>
     </main>
       `;
   },

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free movie catalogue for you">
-    <link rel="icon" href="../icon/logo-gojo.png">
+    <link rel="icon" href="../icons/logo-gojo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -42,7 +42,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="about_us">About Us</a>
                   </li>
                 </ul>
                 <div class="d-flex">
@@ -52,296 +52,7 @@
             </div>
           </nav>
     </header>
-    <div class="content">
-        <!-- Hero carousel start-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../image/jumbotron.jpg" class="d-block w-100 hero" alt="...">
-                <div class="carousel-caption">
-                  <h5>Golek Kerjo</h5>
-                  <p>Best Website for Finding Job</p>
-                  <p><a href="#/jobs" class="btn mulai-btn mt-3 hero">Cari Lowongan</a></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../image/jumbotron.jpg" class="d-block w-100 hero" alt="...">
-                <div class="carousel-caption">
-                  <h5>Golek Kerjo</h5>
-                  <p>Best Website for Finding Job</p>
-                  <p><a href="#/jobs" class="btn mulai-btn mt-3">Cari Lowongan</a></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../image/jumbotron.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>Golek Kerjo</h5>
-                    <p>Best Website for Finding Job</p>
-                    <p><a href="#/jobs" class="btn mulai-btn mt-3">Cari Lowongan</a></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!--End of Hero carousel-->
-        <main>
-            <!-- About GOJO section -->
-            <section id="about-gojo" class="about section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 col-12">
-                            <div class="about-img">
-                                <img src="../image/logo-gojo.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-12 ps-lg-5 mt-md-5">
-                            <div class="about-text">
-                                <h2>GOJO memudahkan anda untuk mencari kerja sesuai dengan harapan Anda</h2>
-                                <p>GOJO merupakan aplikasi job portal yang memmudahkan anda untuk mencari
-                                pekerjaan sesuai dengan lokasi, gaji, dan durasi jam kerja yang sesuai dengan yang anda inginkan </p>
-                                <a href="#" class="btn btn-learnmore">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of About GOJO section -->
-            <!-- filter by catagory start-->
-            <section id="catagories-filter" class="catagories-filter section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-header text-center pb-5">
-                                <h2>Jobs Catagory</h2>
-                                <p>Cari lowongan pekerjaan berdasarkan kategori</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-wite text-center catagory-item pb-2">
-                                <div class="card-body">
-                                    <i class="bi bi-briefcase-fill"></i>
-                                    <h3 class="card-title">Fulltime Job</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                        Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                        reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                        et deserunt dolorum libero. Non, omnis.</p>
-                                    <button class="btn btn-primary text-light">Go</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-wite text-center catagory-item pb-2">
-                                <div class="card-body">
-                                    <i class="bi bi-briefcase-fill"></i>
-                                    <h3 class="card-title">Freelance</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                        Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                        reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                        et deserunt dolorum libero. Non, omnis.</p>
-                                    <button class="btn btn-primary text-light">Go</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-wite text-center catagory-item pb-2">
-                                <div class="card-body">
-                                    <i class="bi bi-briefcase-fill"></i>
-                                    <h3 class="card-title">Internship</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                        Possimus dolores itaque, voluptatum delectus suscipit mollitia hic 
-                                        reprehenderit sapiente quisquam. Ea eum nostrum possimus veritatis 
-                                        et deserunt dolorum libero. Non, omnis.</p>
-                                    <button class="btn btn-primary text-light">Go</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of filter by catagory -->
-            <!-- Seacrh bar start -->
-            <div class="col-md-6 col-lg-6 col-11 mx-auto my-auto search-box">
-                <div class="input-group form-container">
-                   <input type="text" name="search" class="form-control search-input" placeholder="Search Jobs" autofocus="autofocus" autocomplete="off">
-                   <span class="input-group-btn">
-                       <button class="btn btn-search">
-                           <h4>Search</h4>
-                       </button>
-                   </span>
-               </div>
-           </div>
-           <!-- End of Search bar -->
-           <!-- joblist start -->
-           <div class="container justify-content-center" id="joblist">
-            <h3 class="joblist-title">Job list</h3>
-            <div class="row post-item">
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 my-3 justify-content-center">
-                <div class="card shadow" style="width: 18rem;">
-                  <img src="../image/loker.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h3 class="card-title">PT sejahtera</h3>
-                    <h4 class="office-loc">Jakarta Barat</h4>
-                    <h5 class="jobdesk">Jobdesk: <span> Software Engineer</span></h5>
-                    <h5 class="category">Category:<span> Full-time</span></h5>
-                    <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
-                      neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
-                      similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                    <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
-                    <div class="saved-job"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-           <!-- End of joblist -->
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                  <div class="section-header text-center pb-5">
-                      <h2>About Us</h2>
-                  </div>
-              </div>
-            </div>
-            <div class="row text-center">
-              <div class="col-lg-5 mx-auto distance-1">
-                <div class="card shadow mx-auto" style="max-width: 23rem;">
-                  <img class="rounded-circle mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <div class="card-body">
-                    <h2>Nama</h2>
-                    <p>Front End</p>
-                    <p><a class="btn btn-secondary " href="#" role="button">View details »</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 mx-auto distance-1">
-                <div class="card shadow mx-auto" style="max-width: 23rem;">
-                  <img class="rounded-circle mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <div class="card-body">
-                    <h2>Nama</h2>
-                    <p>Front End</p>
-                    <p><a class="btn btn-secondary " href="#" role="button">View details »</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 mx-auto distance-1">
-                <div class="card shadow mx-auto" style="max-width: 23rem;">
-                  <img class="rounded-circle mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <div class="card-body">
-                    <h2>Nama</h2>
-                    <p>Front End</p>
-                    <p><a class="btn btn-secondary " href="#" role="button">View details »</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-5 mx-auto distance-1">
-                <div class="card shadow mx-auto" style="max-width: 23rem;">
-                  <img class="rounded-circle mx-auto" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                  <div class="card-body">
-                    <h2>Nama</h2>
-                    <p>Front End</p>
-                    <p><a class="btn btn-secondary " href="#" role="button">View details »</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        </main>
-    </div>
-
+    <div class="content"></div>
     <footer class="pt-5 pb-4 border-top footer mt-5 mx-auto">
         <div class="container-fluid text-center text-md-left">
           <div class="row text-center text-md-left">
@@ -352,42 +63,42 @@
               <div class="col mb-3"></div>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Resource</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">NAVIGATION</h5>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="#/home" class="text-white link" style="text-decoration: none;">HOME</a>
               </p>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="#/jobs" class="text-white link" style="text-decoration: none;">JOBS</a>
               </p>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="#/saved-jobs" class="text-white link" style="text-decoration: none;">Saved JOBS</a>
+              </p>
+              <p class="nav-item mb-2">
+                <a href="#/catagory" class="text-white link" style="text-decoration: none;">CATAGORY</a>
+              </p>
+              <p class="nav-item mb-2">
+                <a href="#/about_us" class="text-white link" style="text-decoration: none;">ABOUT US</a>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Sosial Media</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">CONTACT</h5>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="https://www.linkedin.com/in/zulfadar-indaka-alkaf-097b82255/" class="text-white link" style="text-decoration: none;">Zulfadar</a>
               </p>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="https://www.linkedin.com/in/abdurrahman-auf-569872244/" class="text-white link" style="text-decoration: none;">Auf</a>
               </p>
               <p class="nav-item mb-2">
-                <a href="#" class="text-white link" style="text-decoration: none;">Facebook</a>
+                <a href="https://www.linkedin.com/in/galuhwidynugroho/" class="text-white link" style="text-decoration: none;">Galuh</a>
+              </p>
+              <p class="nav-item mb-2">
+                <a href="https://www.linkedin.com/in/faiz-gunawan/" class="text-white link" style="text-decoration: none;">Faiz</a>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Contact</h5>
+              <h5 class="text-uppercase mb-4 font-weight-bold text-secondary">Address</h5>
               <p>
                 <i class="fas fa-home mr-3">Semarang, Jawa Tengah, Indonesia</i>
-              </p>
-              <p>
-                <i class="fas fa-envelope mr-3">Semarang, Jawa Tengah, Indonesia</i>
-              </p>
-              <p>
-                <i class="fas fa-phone mr-3">Semarang, Jawa Tengah, Indonesia</i>
-              </p>
-              <p>
-                <i class="fas fa-print mr-3">Semarang, Jawa Tengah, Indonesia</i>
               </p>
             </div>
             <hr class="mb-4">

@@ -317,3 +317,8 @@ header {
 .copyright {
   background-color: #6C4AB6!important;
 }
+
+/* About us */
+.about-us-container {
+  background: #424d8a;
+}
