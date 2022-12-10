@@ -16,7 +16,7 @@ const createItemTemplate = (data) => `
                 <!-- <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic ad 
                 neque omnis adipisci eveniet minima dolores explicabo recusandae dicta est, officiis 
                 similique magni aspernatur aliquid fugiat accusantium, sint ratione.</p> -->
-                <a href="#" class="btn apply-btn text-white">Kirim Lamaran</a>
+                <a href="${data.link}" target="_blank" class="btn apply-btn text-white">Kirim Lamaran</a>
                 <div class="saved-job"></div>
             </div>
         </div>
