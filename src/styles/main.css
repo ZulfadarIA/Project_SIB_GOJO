@@ -216,6 +216,8 @@ header {
 /* joblist */
 #joblist {
   overflow-y: scroll;
+  height: 500px;
+  margin-bottom: 120px;
 }
 
 .joblist-title {
@@ -241,6 +243,8 @@ header {
   justify-content: center;
   display: flex;
   margin: 30px auto auto !important;
+  overflow-y: scroll;
+  margin-bottom: 300px;
 }
 
 /* card */
@@ -321,4 +325,10 @@ header {
 /* About us */
 .about-us-container {
   background: #424d8a;
+  margin-top: 100px;
+  bottom: -50px;
+}
+
+.card-body i {
+  font-size: 50px;
 }
