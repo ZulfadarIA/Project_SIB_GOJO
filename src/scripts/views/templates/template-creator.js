@@ -54,7 +54,7 @@ const createAboutTemplate = () => `
       <div class="card-body">
         <h2>Zulfadar Indaka Alkaf</h2>
         <p>Front End & UI Designer</p>
-        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/zulfadar-indaka-alkaf-097b82255/" role="button">View details »</a></p>
+        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/zulfadar-indaka-alkaf-097b82255/" target="_blank" role="button">View details »</a></p>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@ const createAboutTemplate = () => `
       <div class="card-body">
         <h3>M.R. Abdurrahman’auf A</h3>
         <p>Front End</p>
-        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/abdurrahman-auf-569872244/" role="button">View details »</a></p>
+        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/abdurrahman-auf-569872244/" target="_blank" role="button">View details »</a></p>
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@ const createAboutTemplate = () => `
       <div class="card-body">
         <h2>Galuh Widy Nugroho</h2>
         <p>Front End</p>
-        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/galuhwidynugroho/" role="button">View details »</a></p>
+        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/galuhwidynugroho/" target="_blank" role="button">View details »</a></p>
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@ const createAboutTemplate = () => `
       <div class="card-body">
         <h2>Faiz Gunawan</h2>
         <p>Front End</p>
-        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/faiz-gunawan/" role="button">View details »</a></p>
+        <p><a class="btn btn-secondary " href="https://www.linkedin.com/in/faiz-gunawan/" target="_blank" role="button">View details »</a></p>
       </div>
     </div>
   </div>

@@ -62,7 +62,7 @@ const Home = {
                             <h2>GOJO memudahkan anda untuk mencari kerja sesuai dengan harapan Anda</h2>
                             <p>GOJO merupakan aplikasi job portal yang memmudahkan anda untuk mencari
                             pekerjaan sesuai dengan lokasi, gaji, dan durasi jam kerja yang sesuai dengan yang anda inginkan </p>
-                            <a href="#" class="btn btn-learnmore">Learn More</a>
+                            <a href="https://github.com/ZulfadarIA/Project_SIB_GOJO"  class="btn btn-learnmore">Learn More</a>
                         </div>
                     </div>
                 </div>
