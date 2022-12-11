@@ -332,3 +332,11 @@ header {
 .card-body i {
   font-size: 50px;
 }
+
+/* Detail */
+.movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
