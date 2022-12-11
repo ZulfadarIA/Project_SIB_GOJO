@@ -4,7 +4,49 @@ import { createItemTemplate } from '../templates/template-creator';
 const Home = {
   async render() {
     return `
-    
+    <!-- Hero carousel start-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../image/jumbotron.jpg" class="d-block w-100 hero" alt="...">
+            <div class="carousel-caption">
+              <h5>Golek Kerjo</h5>
+              <p>Best Website for Finding Job</p>
+              <p><a href="#/jobs" class="btn mulai-btn mt-3 hero">Cari Lowongan</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../image/jumbotron_2.png" class="d-block w-100 hero" alt="...">
+            <div class="carousel-caption">
+              <h5>Golek Kerjo</h5>
+              <p>Best Website for Finding Job</p>
+              <p><a href="#/jobs" class="btn mulai-btn mt-3">Cari Lowongan</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../image/jumnbtron_3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+                <h5>Golek Kerjo</h5>
+                <p>Best Website for Finding Job</p>
+                <p><a href="#/jobs" class="btn mulai-btn mt-3">Cari Lowongan</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--End of Hero carousel-->
     <main>
         <!-- About GOJO section -->
         <section id="about-gojo" class="about section-padding">
