@@ -313,7 +313,7 @@ header {
 /* footer */
 
 .footer {
-  margin-top: 600px!important;
+  margin-top: 100px!important;
   background-color: #8D9EFF!important;
   padding: 120px;
 }
@@ -324,9 +324,7 @@ header {
 
 /* About us */
 .about-us-container {
-  background: #424d8a;
   margin-top: 100px;
-  bottom: -50px;
 }
 
 .card-body i {
@@ -339,4 +337,59 @@ header {
   grid-template-columns: 1fr;
   gap: 16px;
   margin: 32px 0;
+}
+
+/*detail*/
+.card{
+  height: 100%; 
+}
+
+.detail{
+  margin-top: 100px;
+  bottom: -50px;
+}
+
+.job_card{
+  display: grid;
+  margin : 0 auto auto;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  text-align: left;
+  grid-template-areas:
+  "img info"
+  "description description";
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.job_img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
+  grid-area: img;
+  padding: 28px 28px 0 28px;
+}
+
+.job_info{
+  margin: 28px 0 0 28px;
+  grid-area: info;
+}
+
+.job_info h4 {
+  margin: 8px 0;
+}
+
+.job_description{
+  grid-area: description;
+  padding: 16px 28px 28px 28px;
+}
+
+.job_description h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 12px;
 }

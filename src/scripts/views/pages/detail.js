@@ -1,21 +1,22 @@
+import UrlParser from '../../routes/url-parser';
 import DataSource from '../../data/gojo-api-source';
-import { createItemTemplate } from '../templates/template-creator';
+import { createDetailTemplate } from '../templates/template-creator';
 
 const DetailJobs = {
   async render() {
     return `
     <main>
-       
+       <div id="detail" class="container detail">
+       </div>
     </main>
       `;
   },
 
   async afterRender() {
-    const apis = await DataSource.dataList();
-    const restaurantContent = document.querySelector('#joblist');
-    apis.forEach((data) => {
-      restaurantContent.innerHTML += createItemTemplate(data);
-    });
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const data = await DataSource.detailData(url.id);
+    const dataContent = document.querySelector('#detail');
+    dataContent.innerHTML = createDetailTemplate(data);
   },
 };
 
