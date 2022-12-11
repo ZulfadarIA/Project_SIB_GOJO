@@ -346,7 +346,6 @@ header {
 
 .detail{
   margin-top: 100px;
-  bottom: -50px;
 }
 
 .job_card{
@@ -361,17 +360,19 @@ header {
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .job_img {
   width: 100%;
-  max-width: 800px;
+  max-width: 400px;
   border-radius: 5px;
   grid-area: img;
-  padding: 28px 28px 0 28px;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding: 0 0 28px 100px;
 }
 
 .job_info{
@@ -393,3 +394,8 @@ header {
   font-size: 20px;
   margin-bottom: 12px;
 }
+
+.job_description a {
+  margin-bottom: 12px;
+}
+

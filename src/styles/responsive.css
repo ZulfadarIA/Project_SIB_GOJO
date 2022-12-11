@@ -29,3 +29,40 @@
        font-style: 12px;
    }
 }
+
+@media(max-width: 920px){
+    .job_card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:40px;
+      grid-template-areas:
+      "img img"
+      "info info"
+      "description description";
+    }
+    .job_img {
+      width: 100%;
+      border-radius: 5px;
+      grid-area: img;
+      margin-left: 0;
+    }
+  }
+  
+  @media(max-width: 690px){
+    .job_card {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap:40px;
+      grid-template-areas:
+      "img img"
+      "info info"
+      "description description";
+    }
+  
+    .job_img {
+      width: 100%;
+      border-radius: 5px;
+      grid-area: img;
+      margin-left: 0;
+    }
+  }
