@@ -118,9 +118,9 @@ const Home = {
         <!-- Seacrh bar start -->
         <div class="col-md-6 col-lg-6 col-11 mx-auto my-auto search-box">
             <div class="input-group form-container">
-               <input type="text" name="search" class="form-control search-input" placeholder="Search Jobs" autofocus="autofocus" autocomplete="off">
+               <input type="text" name="search" id="search" class="form-control search-input" placeholder="Search Jobs" autofocus="autofocus" autocomplete="off">
                <span class="input-group-btn">
-                   <button class="btn btn-search">
+                   <button id="button" class="btn btn-search">
                        <h4>Search</h4>
                    </button>
                </span>
@@ -146,11 +146,25 @@ const Home = {
 
   async afterRender() {
     const apis = await DataSource.dataList();
-    const dataContent = document.querySelector('.post-item');
+    const restaurantContent = document.querySelector('.post-item');
     const aboutContent = document.querySelector('.about-us-container');
-    apis.forEach((data) => {
-      dataContent.innerHTML += createItemTemplate(data);
+    const button = document.querySelector('#button');
+    const showUser = (arr) => {
+      let output = '';
+
+      arr.forEach((data) => (output += createItemTemplate(data)));
+      restaurantContent.innerHTML = output;
+    };
+
+    button.addEventListener('click', () => {
+      const iptSearch = document.querySelector('#search');
+      const element = iptSearch.value.toLowerCase();
+      const newUser = apis.filter((user) => user.title.toLowerCase().includes(element));
+
+      showUser(newUser);
     });
+
+    showUser(apis);
     aboutContent.innerHTML = createAboutTemplate();
   },
 };
